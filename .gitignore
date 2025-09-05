@@ -232,3 +232,9 @@ terraform.rc
 
 # Temp dev files
 dev_scratchpad/*
+
+# SQLite output
+app.db
+
+# JSON output
+data/
