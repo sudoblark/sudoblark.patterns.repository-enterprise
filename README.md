@@ -17,7 +17,7 @@ A small Typer CLI that demonstrates the Repository pattern in Python and how to 
 
 This repo is a minimal, runnable demonstration of the Repository pattern with a Typer-based CLI. It keeps the domain separate from infrastructure implementations. The CLI exercises the repositories through a small “Discworld catalog” example (books, characters, mappings).
 
-It should be considered supplementary to the following [blog post](https://sudoblark.com/blog/database-interoperability-in-python-with-the-repository-enterprise-pattern) which attempts to describe the pattern in more detail.
+It should be considered supplementary to the following [blog post](https://sudoblark.com/blog/database-interoperability-in-python-with-the-repository-enterprise-pattern/) which attempts to describe the pattern in more detail.
 
 ### Features
 
@@ -177,7 +177,9 @@ python3 -m venv .venv && source .venv/bin/activate
 
 # 2) install
 python -m pip install -U pip
-python -m pip install -e .
+pip install -U pip setuptools
+pip install poetry
+poetry install
 
 # 3) choose backend
 export PERSIST_BACKEND=sqlite   # or: json
